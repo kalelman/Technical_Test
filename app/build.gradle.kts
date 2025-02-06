@@ -56,4 +56,19 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    // Hilt for Dependency Injection
+    implementation(libs.hilt.android.v2511)
+    annotationProcessor(libs.hilt.android.compiler.v2511)
+    implementation(libs.androidx.hilt.navigation.compose)
+
+    // Retrofit for Networking
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.logging.interceptor)
+
+    // Room for Local Database
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    annotationProcessor(libs.androidx.room.compiler)
 }
